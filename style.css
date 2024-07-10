@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-    margin-right: 2em;
+
     margin-left: 2em;
 }
 
@@ -65,7 +65,7 @@ body {
     padding: 1em 2em;
     cursor: pointer;
     font-weight: bold;
-    margin-right: 2em;
+
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .hamburger span {
-    width: 25px;
+    width: 2.2em;
     height: 3px;
     background: black;
     display: block;
