@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norah's Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style scoped>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css");
+    </style>
+    <style>
+        body {
+
+            font-family: 'Oswald', sans-serif;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        button:focus,
+        input:focus,
+        textarea:focus {
+            outline: 0;
+        }
+
+        .mixit_wrapper {
+            padding: 80px 0;
+        }
+
+
+
+
+        .custom_btn button {
+            padding: 10px 22px;
+            background: #ffffff;
+            margin: 15px 15px;
+            transition: .3s;
+        }
+
+        .custom_btn button:hover,
+        .mixitup-control-active {
+            background: #000000 !important;
+            color: #ffffff !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <div class="logo" style="font-size: 1.7em;"><b style="color: red;">CHEE</b>SPACE</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourwork.html">Our Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+
+        </ul>
+        <a href="contact.html"><button class="talk-to-us">Contact</button></a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="close-btn" id="close-btn">×</div>
+            <ul class="overlay-links">
+                <ul class="list-unstyled">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="ourwork.html"><i class="fas fa-briefcase"></i> Our Work</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                </ul>
+
+
+                <br><br><br>
+                <button class="talk-to-us" style="color: white;">Talk to Us</button>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="bootstrap-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-offset="100">
+                    <div class="seperator"></div>
+                    <h2 class="scroll-reveal" style="font-size: 5em;">OUR <b style="color: red; "><BR>WORK</b>
+                    </h2>
+                </div>
+            </div>
+            <div class="mixit_wrapper">
+                <div class="container text-center">
+                    <div class="custom_btn">
+                        <button type="button" data-filter="all"
+                            style="border: 1px solid rgb(0, 0, 0) !important;">ALL</button>
+                        <button type=" button" data-filter=".laptop"
+                            style="border: 1px solid rgb(0, 0, 0) !important;">BRANDING</button>
+                        <button type=" button" data-filter=".tree"
+                            style="border: 1px solid rgb(0, 0, 0) !important;">DEVELOPMENT</button>
+                        <button type=" button" data-filter=".man"
+                            style="border: 1px solid rgb(0, 0, 0) !important;">MARKETING</button>
+                        <button type=" button" data-filter=".flower"
+                            style="border: 1px solid rgb(0, 0, 0) !important;">UI/UX DESIGN</button>
+                    </div>
+                </div>
+                <div class="container mixit_active">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 mix flower p-0 position-relative">
+                            <div class="images-overlay">
+                                <img class="img-fluid w-100" src="1 (1).jpg" alt="">
+                                <div
+                                    style="position: absolute; bottom: 0; left: 0; padding: 10px;  background-color: rgba(0, 0, 0, 0.537);">
+                                    <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                    <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Quam ea, autem</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mix flower p-0 position-relative">
+                            <img class="img-fluid w-100" src="1 (2).jpg" alt="">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; padding: 10px;  background-color: rgba(0, 0, 0, 0.537);">
+                                <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quam ea, autem</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 col-md-6 mix laptop p-0 position-relative">
+                            <img class="img-fluid w-100" src="1 (3).jpg" alt="">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; padding: 10px;  background-color: rgba(0, 0, 0, 0.537);">
+                                <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quam ea, autem</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mix laptop p-0 position-relative">
+                            <img class="img-fluid w-100" src="1 (4).jpg" alt="">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; padding: 10px;  background-color: rgba(0, 0, 0, 0.537);">
+                                <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quam ea, autem</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mix man p-0 position-relative">
+                            <img class="img-fluid w-100" src="1 (5).jpg" alt="">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; padding: 10px;  background-color: rgba(0, 0, 0, 0.537);">
+                                <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quam ea, autem</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mix man p-0 position-relative">
+                            <img class="img-fluid w-100" src="1 (6).jpg" alt="">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; padding: 10px;  background-color: rgba(0, 0, 0, 0.537);">
+                                <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quam ea, autem</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mix tree p-0  position-relative">
+                            <img class="img-fluid w-100" src="1 (3).jpg" alt="">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; padding: 10px; background-color: rgba(0, 0, 0, 0.537); ">
+                                <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quam ea, autem</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mix tree p-0 position-relative">
+                            <img class="img-fluid w-100" src="1 (5).jpg" alt="">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; padding: 10px;  background-color: rgba(0, 0, 0, 0.537);">
+                                <p style="color: white; font-size: 18px; font-weight: bold;">hiiiii</p>
+                                <p style="color: white; font-size: 14px;">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quam ea, autem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <h2 class="scroll-reveal" style="font-size: 4em; margin-left: 1EM">OUR <b style="color: red;; ">CLIENTS</b>
+    </h2>
+    <br>
+    <section id="our-clients">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col">
+                    <ul class="list-unstyled scroll-reveal">
+                        <li>Achiote Restaurants</li>
+                        <li>Anheuser-Busch</li>
+                        <li>Affordable Plastics</li>
+                        <li>All-In Med</li>
+                        <li>Angel Lopez</li>
+                        <li>Argelias House Cleaning</li>
+                        <li>Aro Di Santi</li>
+                        <li>Asi Suena</li>
+                        <li>Bella Designs</li>
+                        <li>Bonita Learning Academy</li>
+                        <li>Bang and Olufsen</li>
+                        <li>Castillo Contracting</li>
+                        <li>Common Table</li>
+                        <li>Charlies Best Bread</li>
+                        <li>Damas Latinas de San Diego</li>
+                        <li>Disney Financial</li>
+                        <li>Denis Gile Quarterback Academy</li>
+                        <li>Ec Gallery</li>
+                        <li>Editoria Primo</li>
+                        <li>El Zarape Mexican Eatery</li>
+                        <li>Emily Shane</li>
+                        <li>Emporio Flooring</li>
+                        <li>Empresa VIP</li>
+                        <li>Espadaña Restaurant</li>
+                        <li>Expert Assembly</li>
+                    </ul>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="col">
+                    <ul class="list-unstyled scroll-reveal">
+                        <li>Glo Beverage</li>
+                        <li>Goga Couture</li>
+                        <li>Italgo Pasta Bar</li>
+                        <li>Jaime Partners</li>
+                        <li>Karoli Make Up School</li>
+                        <li>Karoli Cosmetics</li>
+                        <li>King and Queen Cantina</li>
+                        <li>LDGS Lighting</li>
+                        <li>Light The Way Music</li>
+                        <li>Lisa Davis Upholstery</li>
+                        <li>Luzon Lighting</li>
+                        <li>Lyft</li>
+                        <li>Marisa Baratelli</li>
+                        <li>Master Q Studios</li>
+                        <li>Metal Etch Services</li>
+                        <li>Mini Micro Stencils</li>
+                        <li>No Party Without Wine</li>
+                        <li>Olympic Training Academy</li>
+                        <li>Oma Premium Lounges</li>
+                        <li>Otay Storage</li>
+                        <li>Pacific Basin Freight</li>
+                        <li>Payless Registration</li>
+                        <li>Pisos Alfombras</li>
+                        <li>Prime Shoes and More</li>
+                        <li>Prokennex</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col">
+                    <ul class="list-unstyled scroll-reveal">
+                        <li>Pro Studio Live</li>
+                        <li>Romesco</li>
+                        <li>Rebecca’s Cleaning Services</li>
+                        <li>Refsa</li>
+                        <li>Regioacero</li>
+                        <li>Rework Inc</li>
+                        <li>Said Aguilar</li>
+                        <li>Sales y Quimicos</li>
+                        <li>Santi Wong</li>
+                        <li>Sanwood Fine Carpentry</li>
+                        <li>Sent Elemald</li>
+                        <li>SGA Soluciones</li>
+                        <li>SMT Tools</li>
+                        <li>Special Carbon Fiber</li>
+                        <li>Tapy Quintero</li>
+                        <li>Temp Cash Fast</li>
+                        <li>Feedback</li>
+                        <li>Traacsa</li>
+                        <li>Whitfield Atheletix</li>
+                        <li>Zorbas Greek Buffet</li>
+                        <li>Zytech</li>
+                        <li>XtremeXD</li>
+                        <li>Xtreme Planet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="idea-section">
+        <div class="idea-content">
+            <h1 class="scroll-reveal">Got an IDEA?</h1>
+            <p class="scroll-reveal">Let's take care of your brand and marketing</p>
+            <a href="contact.html"><button class="talk-to-us">Contact</button></a>
+        </div>
+    </section>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-messages" id="chat-messages">
+            <p class="bot-message">Welcome! How can I help you? <i class="fab fa-whatsapp fa-2x" id="whatsapp-icon"></i>
+            </p>
+        </div>
+        <div class=" chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Sticky Chat Icon -->
+    <button class="chat-icon" onclick="toggleChatbot()">💬</button>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <p style="font-size: 1em;">We are Thecheespace.</p>
+                <p style=" font-size: 0.8em;">We are an innovative digital marketing agency that focuses on building
+                    around technology and consumer experience. We build exciting brand experiences for our clients.
+                </p>
+            </div>
+            <div class="footer-section" style="margin-left: 2em; font-size: 0.8em;">
+                <p> ADDRESS</p>
+                <p>24 somewhere somplace #1060</p>
+                <p>lorem, CA 1111</p>
+                <p>Nigeria</p>
+            </div>
+            <div class="footer-section" style="font-size: 0.8em;">
+                <p>TALK WITH US</p>
+                <p>hello@cheespace.com</p>
+                <p>(000) 000-0000</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p style=" font-size: 0.8em;">© 2024 CHEESPACE</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="mixitup.min.js"></script>
+    <script type="text/javascript">
+
+        var mixer = mixitup('.mixit_active');
+
+    </script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            ScrollReveal().reveal('.scroll-reveal', {
+                duration: 1000,
+                distance: '20px',
+                easing: 'ease-in-out',
+                origin: 'bottom',
+                interval: 200
+            });
+        });
+
+        var chatContainer = document.getElementById('chat-container');
+
+        function toggleChatbot() {
+            chatContainer.style.display = (chatContainer.style.display === 'none' || chatContainer.style.display === '') ? 'block' : 'none';
+        }
+
+        function sendMessage() {
+            var userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === '') return;
+
+            appendUserMessage(userInput);
+            respondToUser(userInput);
+
+            document.getElementById('user-input').value = '';
+        }
+
+        function appendUserMessage(message) {
+            var chatMessages = document.getElementById('chat-messages');
+            var userMessageElement = document.createElement('p');
+            userMessageElement.classList.add('user-message');
+            userMessageElement.textContent = message;
+            chatMessages.appendChild(userMessageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function appendBotMessage(message) {
+            var chatMessages = document.getElementById('chat-messages');
+            var botMessageElement = document.createElement('p');
+            botMessageElement.classList.add('bot-message');
+            botMessageElement.textContent = message;
+            chatMessages.appendChild(botMessageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function respondToUser(message) {
+            var botResponse = generateBotResponse(message);
+            setTimeout(() => {
+                appendBotMessage(botResponse);
+            }, 1000);
+        }
+
+
+        function generateBotResponse(userMessage) {
+            var lowerCaseMessage = userMessage.toLowerCase();
+
+            // Example responses based on user input
+            if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
+                return "Hi there! How can I assist you today?";
+            } else if (lowerCaseMessage.includes('services') || lowerCaseMessage.includes('what do you offer')) {
+                return "We offer a range of services including web development, mobile app development, and digital marketing.";
+            } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach you')) {
+                return "You can contact us at thecheespace@gmail.com or 07049393818.";
+            } else if (lowerCaseMessage.includes('hours') || lowerCaseMessage.includes('working hours')) {
+                return "Our office hours are Monday to Friday, 9:00 AM to 5:00 PM.";
+            } else if (lowerCaseMessage.includes('hey')) {
+                return "Hey! What can I do for you?";
+            } else if (lowerCaseMessage.includes('services') || lowerCaseMessage.includes('what services do you offer')) {
+                return "We offer web development, mobile app development, and digital marketing services.";
+            } else if (lowerCaseMessage.includes('tell me about your services')) {
+                return "Our services include web development, mobile app development, and digital marketing.";
+            } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach you')) {
+                return "You can reach us at thecheespace@gmail.com or 07049393818.";
+            } else if (lowerCaseMessage.includes('email')) {
+                return "Our email is thecheespace@gmail.com.";
+            } else if (lowerCaseMessage.includes('phone') || lowerCaseMessage.includes('phone number')) {
+                return "You can contact us at 07049393818.";
+            } else if (lowerCaseMessage.includes('hours') || lowerCaseMessage.includes('working hours')) {
+                return "Our office hours are Monday to Friday, 9:00 AM to 5:00 PM.";
+            } else if (lowerCaseMessage.includes('when are you open')) {
+                return "We're open Monday to Friday, 9:00 AM to 5:00 PM.";
+            } else if (lowerCaseMessage.includes('help') || lowerCaseMessage.includes('assist')) {
+                return "Sure! What do you need help with?";
+            } else if (lowerCaseMessage.includes('question')) {
+                return "Feel free to ask! I'm here to help.";
+            } else if (lowerCaseMessage.includes('goodbye') || lowerCaseMessage.includes('bye')) {
+                return "Goodbye! Have a great day.";
+            } else if (lowerCaseMessage.includes('talk to a human')) {
+                return "Certainly! Please reach out to us directly at thecheespace@gmail.com or call 07049393818.";
+            } else if (lowerCaseMessage.includes('whatsapp')) {
+                return "Yes, you can contact us via WhatsApp at the number provided.";
+            } else if (lowerCaseMessage.includes('company') || lowerCaseMessage.includes('about your company')) {
+                return "We are The CheeseSpace, a digital agency specializing in web development and digital marketing.";
+            } else if (lowerCaseMessage.includes('located')) {
+                return "We are located at [Your Address]."; // Replace with your actual address
+            } else {
+                return "I'm sorry, I didn't quite understand. Can you please rephrase?";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

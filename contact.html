@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norah's Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensure this CSS is added to your styles */
+        #contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-left: 3em;
+        }
+
+        .contact-form-container,
+        .business-info-container {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+
+        .contact-form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+
+        .contact-form-container form div {
+            display: flex;
+            gap: 10px;
+
+        }
+
+
+        .contact-form-container form input,
+        .contact-form-container form select,
+        .contact-form-container form textarea {
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        .contact-form-container form button {
+            align-self: center;
+            padding: 10px 20px;
+        }
+
+        .business-info-container ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+
+
+        }
+
+
+
+
+        .move {
+            align-items: center;
+            margin-left: 2em;
+
+        }
+
+        /* Add FontAwesome Icons */
+        .fab {
+            font-size: 24px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            #contact-section {
+                flex-direction: column;
+                margin-left: 0em;
+            }
+
+            .move {
+                margin-left: 2em;
+            }
+
+
+        }
+
+        #map-container {
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <div class="logo" style="font-size: 1.7em;"><b style="color: red;">CHEE</b>SPACE</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourwork.html">Our Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+
+        </ul>
+        <a href="contact.html"><button class="talk-to-us">Contact</button></a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="close-btn" id="close-btn">×</div>
+            <ul class="overlay-links">
+                <ul class="list-unstyled">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="ourwork.html"><i class="fas fa-briefcase"></i> Our Work</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                </ul>
+
+                <br><br><br>
+                <button class="talk-to-us" style="color: white;">Talk to Us</button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="big-ideas-section">
+        <section class="big-ideas-section" style="margin-left: 2em;">
+            <div class="big-ideas-content">
+                <h2 class="scroll-reveal">
+                    <span style="font-size: 4em;">SHARE YOUR <br><b style="color: red;">IDEA</b><span
+                            class="blinking-cursor">|</span>&nbsp; TODAY</span>
+
+                </h2>
+
+                <p>BIG IDEAS | START WITH CHEE.</p>
+            </div>
+        </section>
+    </div>
+
+    <section id="contact-section" style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <!-- Contact Form Container -->
+        <div class="contact-form-container" style="flex: 1 1 45%; min-width: 300px;">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required
+                        style="flex: 1;">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required style="flex: 1;">
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <input type="email" id="email" name="email" placeholder="Email" required style="flex: 1;">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" style="flex: 1;">
+                </div>
+                <select id="howDidYouHear" name="howDidYouHear" required style="padding: 10px; font-size: 0.7em;">
+
+                    <option disabled selected>How did you hear about us
+                    </option>
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Instagram</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea id="message" name="message" rows="5" placeholder="Message" required
+                    style="padding: 10px;"></textarea>
+                <button type="submit"
+                    style="align-self: center; padding: 10px 20px; background-color: RED; color: white; border: RED;">Submit</button>
+            </form>
+        </div>
+
+        <!-- Business Contact Information -->
+        <div class="move">
+            <div class="business-info-container" style="flex: 1 1 45%; min-width: 300px;">
+                <h2>CHEESPACE</h2>
+
+                <p> 167, Murtala Muhammed Way</p>
+                <p>Phone: <a href="tel:+2347049393818">(+234)7049393818</a></p>
+                <p>Email: <a href="mailto:thecheespace@gmail.com">thecheespace@gmail.com</a></p>
+
+                <h2>Social Media</h2>
+
+                <div class="social-icons">
+                    <a href="#" style="color: red; "><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="color: red; margin-left: 1em;"><i class="fab fa-github"></i></a>
+                    <a href="#" style="color: red; margin-left: 1em"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <BR>
+            </div>
+    </section>
+    </div>
+    <br>
+    <div id="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0592298221964!2d3.366795974992863!3d6.514187693478257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c5004d38ba1%3A0xec97862f8488721b!2s167%20Murtala%20Muhammed%20Way%2C%20Lagos%20Mainland%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720612324005!5m2!1sen!2sng"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+
+    <!-- Sticky Chat Icon -->
+    <button class="chat-icon" onclick="toggleChatbot()">💬</button>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <p style="font-size: 1em;">We are Thecheespace.</p>
+                <p style=" font-size: 0.8em;">We are an innovative digital marketing agency that focuses on building
+                    around technology and consumer experience. We build exciting brand experiences for our clients.</p>
+            </div>
+            <div class="footer-section" style="margin-left: 2em; font-size: 0.8em;">
+                <p> ADDRESS</p>
+                <p>24 somewhere somplace #1060</p>
+                <p>lorem, CA 1111</p>
+                <p>Nigeria</p>
+            </div>
+            <div class="footer-section" style="font-size: 0.8em;">
+                <p>TALK WITH US</p>
+                <p>hello@cheespace.com</p>
+                <p>(000) 000-0000</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p style=" font-size: 0.8em;">© 2024 CHEESPACE</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize ScrollReveal if present
+            if (typeof ScrollReveal !== 'undefined') {
+                ScrollReveal().reveal('.scroll-reveal', {
+                    duration: 1000,
+                    distance: '20px',
+                    easing: 'ease-in-out',
+                    origin: 'bottom',
+                    interval: 200
+                });
+            }
+
+            // Get chat container
+            var chatContainer = document.getElementById('chat-container');
+
+            // Toggle Chatbot
+            function toggleChatbot() {
+                if (chatContainer) {
+                    chatContainer.style.display = (chatContainer.style.display === 'none' || chatContainer.style.display === '') ? 'block' : 'none';
+                }
+            }
+
+            // Send Message Functionality
+            function sendMessage() {
+                var userInput = document.getElementById('user-input');
+                if (userInput && userInput.value.trim() !== '') {
+                    appendUserMessage(userInput.value);
+                    respondToUser(userInput.value);
+                    userInput.value = '';
+                }
+            }
+
+            // Append User Message
+            function appendUserMessage(message) {
+                var chatMessages = document.getElementById('chat-messages');
+                if (chatMessages) {
+                    var userMessageElement = document.createElement('p');
+                    userMessageElement.classList.add('user-message');
+                    userMessageElement.textContent = message;
+                    chatMessages.appendChild(userMessageElement);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            }
+
+            // Append Bot Message
+            function appendBotMessage(message) {
+                var chatMessages = document.getElementById('chat-messages');
+                if (chatMessages) {
+                    var botMessageElement = document.createElement('p');
+                    botMessageElement.classList.add('bot-message');
+                    botMessageElement.textContent = message;
+                    chatMessages.appendChild(botMessageElement);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            }
+
+            // Respond to User
+            function respondToUser(message) {
+                var botResponse = generateBotResponse(message);
+                setTimeout(() => {
+                    appendBotMessage(botResponse);
+                }, 1000);
+            }
+
+            // Generate Bot Response
+            function generateBotResponse(userMessage) {
+                var lowerCaseMessage = userMessage.toLowerCase();
+
+                // Example responses based on user input
+                if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
+                    return "Hi there! How can I assist you today?";
+                } else if (lowerCaseMessage.includes('services') || lowerCaseMessage.includes('what do you offer')) {
+                    return "We offer a range of services including web development, mobile app development, and digital marketing.";
+                } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach you')) {
+                    return "You can contact us at thecheespace@gmail.com or 07049393818.";
+                } else if (lowerCaseMessage.includes('hours') || lowerCaseMessage.includes('working hours')) {
+                    return "Our office hours are Monday to Friday, 9:00 AM to 5:00 PM.";
+                } else if (lowerCaseMessage.includes('hey')) {
+                    return "Hey! What can I do for you?";
+                } else if (lowerCaseMessage.includes('services') || lowerCaseMessage.includes('what services do you offer')) {
+                    return "We offer web development, mobile app development, and digital marketing services.";
+                } else if (lowerCaseMessage.includes('tell me about your services')) {
+                    return "Our services include web development, mobile app development, and digital marketing.";
+                } else if (lowerCaseMessage.includes('contact') || lowerCaseMessage.includes('reach you')) {
+                    return "You can reach us at thecheespace@gmail.com or 07049393818.";
+                } else if (lowerCaseMessage.includes('email')) {
+                    return "Our email is thecheespace@gmail.com.";
+                } else if (lowerCaseMessage.includes('phone') || lowerCaseMessage.includes('phone number')) {
+                    return "You can contact us at 07049393818.";
+                } else if (lowerCaseMessage.includes('hours') || lowerCaseMessage.includes('working hours')) {
+                    return "Our office hours are Monday to Friday, 9:00 AM to 5:00 PM.";
+                } else if (lowerCaseMessage.includes('when are you open')) {
+                    return "We're open Monday to Friday, 9:00 AM to 5:00 PM.";
+                } else if (lowerCaseMessage.includes('help') || lowerCaseMessage.includes('assist')) {
+                    return "Sure! What do you need help with?";
+                } else if (lowerCaseMessage.includes('question')) {
+                    return "Feel free to ask! I'm here to help.";
+                } else if (lowerCaseMessage.includes('goodbye') || lowerCaseMessage.includes('bye')) {
+                    return "Goodbye! Have a great day.";
+                } else if (lowerCaseMessage.includes('talk to a human')) {
+                    return "Certainly! Please reach out to us directly at thecheespace@gmail.com or call 07049393818.";
+                } else if (lowerCaseMessage.includes('whatsapp')) {
+                    return "Yes, you can contact us via WhatsApp at the number provided.";
+                } else if (lowerCaseMessage.includes('company') || lowerCaseMessage.includes('about your company')) {
+                    return "We are The CheeseSpace, a digital agency specializing in web development and digital marketing.";
+                } else if (lowerCaseMessage.includes('located')) {
+                    return "We are located at [Your Address]."; // Replace with your actual address
+                } else {
+                    return "I'm sorry, I didn't quite understand. Can you please rephrase?";
+                }
+            }
+
+            // Attach event listeners if elements exist
+            var chatButton = document.getElementById('chat-button');
+            var sendButton = document.getElementById('send-button');
+
+            if (chatButton) {
+                chatButton.addEventListener('click', toggleChatbot);
+            }
+
+            if (sendButton) {
+                sendButton.addEventListener('click', sendMessage);
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
